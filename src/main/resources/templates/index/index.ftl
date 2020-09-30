@@ -40,76 +40,15 @@
     <script src="tag/js/zzsc.js"></script>
 </head>
 <body>
-<!-- SECTION 0 NAV -->
-<header class="themelazer_main_header" style="overflow:hidden">
-    <div class="themelazer_middle_header white_bg">
-        <div class="container clearfix">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="themelazer_promomenu_wrapper">
-                        <div class="themelazer_header_social_icons">
-                            <ul class="themelazer_social_wrapper">
-                                <img src="image/headlogo.png" style="width: 25%">
-                            </ul>
-                        </div>
-                        <div class="themelazer-nav clearfix">
-                            <!-- Main Menu -->
-                            <div class="themelazer-navigation">
-                                <ul class="menu black_color">
-                                    <li><a href="/index">首页</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">软件下载</a>
-                                        <ul>
-                                            <li><a href="post-audio.html">Post Audio</a></li>
-                                            <li><a href="post-video.html">Post Video </a></li>
-                                            <li><a href="post-quate.html">Post Quote</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">图文教程</a>
-                                        <ul>
-                                            <li><a href="page-error.html">error</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">视频教程</a></li>
-                                    <li><a href="about.html">博客分享</a></li>
-                                    <li><a href="about.html">精品软件</a></li>
-                                    <li><a href="contact.html">关于本站</a></li>
-                                </ul>
-                            </div>
-                            <!-- Main Menu End-->
-                        </div>
-                        <ul class="header-s-m black_color">
-                            <li class="nav-search">
-                                <a href="#header-search" title="Search"><i class="ti-search"></i></a>
-                            </li>
-                            <li class="themelazer_mb_themelazern sidemenuoption-open is-active"><i class="ti-menu"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="header-search" class="header-search">
-            <button type="button" class="close">
-                <i class="ti-close"></i>
-            </button>
-            <form class="header-search-form">
-                <input type="search" value="" placeholder="What are you looking for?">
-                <button type="submit" class="search-btn">
-                    <i class="ti-search"></i>
-                </button>
-            </form>
-        </div>
-    </div>
-</header>
-
+<!-- 导航栏-->
+<#include "../common/header.ftl"/>
 
 <div class="container">
     <#--    中间区域-->
     <div>
         <span class="spannav" style="line-height: 16px">我的位置 > 首页</span>
         <div class="row">
+            <#--左侧部分-->
             <div class="left col-md-8">
                 <div>
                     <#--第一张图片-->
@@ -294,10 +233,33 @@
                         <div class="clear">
                         </div>
                     </div>
-                    <#---->
+                    <#--中部推荐区域-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <aside>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">未命名推荐</div>
+                                    <div class="panel-body">
 
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-md-6">
+                            <aside>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">未命名推荐</div>
+                                    <div class="panel-body">
+
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <#--右侧部分-->
             <div class="right col-md-4" style="padding-left: 0">
                 <div class="">
                     <#--第一个aside 最新文章-->
