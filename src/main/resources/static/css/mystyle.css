@@ -1,0 +1,485 @@
+.left {
+    background-color: white;
+}
+
+.right {
+    background-color: white;
+}
+
+.cms-news {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.thumbnail {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    display: block;
+    position: relative;
+    float: left;
+    max-width: 200px;
+    height: auto;
+    clear: both;
+    margin: 1px 20px 0 0;
+    overflow: hidden;
+    transition-duration: .5s;
+}
+
+.clear {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    clear: both;
+    display: block;
+}
+
+#post-15279 {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    box-sizing: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    outline: 0;
+    vertical-align: baseline;
+    display: block;
+    position: relative;
+    background: #fff;
+    margin: 0 0 10px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    visibility: visible;
+    animation-delay: 0.3s;
+    animation-name: fadeInUp;
+}
+
+.cat {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #c40000;
+}
+
+.cat a {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    line-height: 28px;
+    padding: 0 10px;
+}
+
+.entry-header {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    display: block;
+}
+
+.entry-title {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    margin: 0 0 5px 0;
+}
+
+.entry-content {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.archive-content {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 91%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    color: #777;
+}
+
+.title-l {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    position: absolute;
+    background: #c40000;
+    top: 21px;
+    left: -1px;
+    width: 5px;
+    height: 28px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.new-icon {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    position: absolute;
+    top: 4px;
+    right: -2px;
+    animation-duration: 1.2s;
+    -webkit-animation: fade-in 1.2s;
+}
+
+.entry-meta {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    position: absolute;
+    bottom: 39px;
+    color: #999;
+    left: 240px;
+}
+
+.entry-more {
+    padding: 10px;
+    background-color: #007bff;
+    font-family: "Microsoft YaHei UI";
+    color: #FFF;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 14px;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+/*右侧样式*/
+.vbq li {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #464646;
+    visibility: visible;
+    list-style: none;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    width: 99%;
+    line-height: 28px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.borderstyle {
+    border: solid 1px #DDDDDD;
+    margin-bottom: 1%;
+}
+
+.spannav {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    white-space: nowrap;
+    box-sizing: inherit;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 14px !important;
+    line-height: .75em;
+    vertical-align: -5%;
+    font-family: "be" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.be-new {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    line-height: .75em;
+    vertical-align: -5%;
+    font-family: "be" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 40px !important;
+    color: #c40000;
+}
+
+.titleSpan {
+    position: absolute;
+    right: 6px;
+    top: 150px;
+    padding: 1px;
+    background-color: #007bff;
+}
+
+.titleSpan a {
+    padding: 10px;
+    font-family: "Microsoft YaHei UI";
+    color: #FFF;
+    font-family: inherit;
+    font-size: 14px;
+    font-style: inherit;
+}
+
+/*      站长推荐*/
+.borderabout {
+    text-align: center;
+    border: solid 1px #DDDDDD;
+}
+
+/*热门文章*/
+.thumbnail1 {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    visibility: visible;
+    list-style: none;
+    line-height: 28px;
+    white-space: nowrap;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    max-width: 200px;
+    clear: both;
+    transition-duration: .5s;
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 75px;
+    margin: 8px 8px 8px 0;
+    overflow: hidden;
+}
+
+.new-title {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    visibility: visible;
+    list-style: none;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    height: 59px;
+    padding-top: 5px;
+    line-height: 25px;
+    overflow: hidden;
+    white-space: normal;
+    display: block;
+}
+
+.date {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    visibility: visible;
+    list-style: none;
+    line-height: 28px;
+    white-space: nowrap;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    float: right;
+    color: #999;
+}
+
+.views {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    visibility: visible;
+    list-style: none;
+    line-height: 28px;
+    white-space: nowrap;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    color: #999;
+}
+
+/*热评文章*/
+.hot_comment_widget {
+    font: 14px "Microsoft YaHei", Helvetica, Arial, Lucida Grande, Tahoma, sans-serif;
+    color: #444;
+    line-height: 180%;
+    visibility: visible;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.li-icon {
+    background-color: #ccc;
+    padding: 2px 5px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 180%;
+    margin: 0 5px 0 0;
+}
+.li-icon-1{
+    background-color: #c40000;
+}
+#hot_comment_widget ul li{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width:100%;
+    line-height: 28px;
+    font-size: 100%;
+}
+#hot_comment_widget ul li a{
+    color: #555;
+}
