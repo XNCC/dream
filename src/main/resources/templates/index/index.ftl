@@ -56,7 +56,7 @@
                             <!-- Main Menu -->
                             <div class="themelazer-navigation">
                                 <ul class="menu black_color">
-                                    <li><a href="about.html">首页</a></li>
+                                    <li><a href="/index">首页</a></li>
                                     <li class="menu-item-has-children">
                                         <a href="#">软件下载</a>
                                         <ul>
