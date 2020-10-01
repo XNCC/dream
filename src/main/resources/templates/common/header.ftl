@@ -44,28 +44,25 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="themelazer_promomenu_wrapper">
+                        <a href="/index">
                         <div class="themelazer_header_social_icons">
                             <ul class="themelazer_social_wrapper">
                                 <img src="image/headlogo.png" style="width: 25%">
                             </ul>
+                        </a>
                         </div>
                         <div class="themelazer-nav clearfix">
                             <!-- Main Menu -->
                             <div class="themelazer-navigation">
                                 <ul class="menu black_color">
                                     <li><a href="/index">首页</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">软件下载</a>
-                                        <ul>
-                                            <li><a href="post-audio.html">Post Audio</a></li>
-                                            <li><a href="post-video.html">Post Video </a></li>
-                                            <li><a href="post-quate.html">Post Quote</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="/download">软件下载</a></li>
                                     <li class="menu-item-has-children">
                                         <a href="#">图文教程</a>
                                         <ul>
-                                            <li><a href="page-error.html">error</a></li>
+                                            <li><a href="page-error.html">安装激活</a></li>
+                                            <li><a href="page-error.html">高效办公</a></li>
+                                            <li><a href="page-error.html">ps教程</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="about.html">视频教程</a></li>

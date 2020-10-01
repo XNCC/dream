@@ -16,4 +16,9 @@ public class index {
     public String index(){
         return "index/index";
     }
+
+    @GetMapping("/download")
+    public String download(){
+        return "index/indexdowload";
+    }
 }
