@@ -17,5 +17,19 @@
     <update id="updateTemplate" parameterType="com.vbqncc.dream.dream.pojo.back.template">
         update template set template=#{template} where id=#{id}
     </update>
+    <!--    页面初始化的时候模板查询-->
+    <select id="selectFirstTemplate" resultType="string">
+        select template from template where id=1
+<!--        <if test="title != null">-->
+<!--            AND title like #{title}-->
+<!--        </if>-->
+
+    </select>
+
+
+    <!--博客管理，教程管理，下载页管理分页查询-->
+    <select id="selectPaging" parameterType="string" resultType="com.vbqncc.dream.dream.pojo.back.content">
+        select * from content where contenttype=#{contenttype}
+    </select>
 
 </mapper>

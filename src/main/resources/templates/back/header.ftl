@@ -46,7 +46,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="/backwrite">写文章</a></li>
                 <li><a href="/templateEdite">模板编辑</a></li>
-                <li><a href="/">博客文章管理</a></li>
+                <li><a href="/blogManage">博客文章管理</a></li>
                 <li><a href="/">教程文章管理</a></li>
                 <li><a href="/">下载页面教程管理</a></li>
             </ul>

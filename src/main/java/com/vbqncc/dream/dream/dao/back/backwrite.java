@@ -4,6 +4,8 @@ import com.vbqncc.dream.dream.pojo.back.content;
 import com.vbqncc.dream.dream.pojo.back.template;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 /**
  * @author ncc
  * <p>
@@ -17,4 +19,8 @@ public interface backwrite {
     public String selectTemplateById(int id);
 
     public int updateTemplate(template template);
+
+    public String selectFirstTemplate();
+
+    public List<content> selectPaging(String contenttype, int page, int pageSize);
 }

@@ -1,10 +1,13 @@
 package com.vbqncc.dream.dream.service.back;
 
+import com.github.pagehelper.PageHelper;
 import com.vbqncc.dream.dream.dao.back.backwrite;
 import com.vbqncc.dream.dream.pojo.back.content;
 import com.vbqncc.dream.dream.pojo.back.template;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @author ncc
@@ -30,5 +33,20 @@ public class backwriteImpl implements backwrite {
     @Override
     public int updateTemplate(template template) {
         return backwrite.updateTemplate(template);
+    }
+
+    @Override
+    public String selectFirstTemplate() {
+        return backwrite.selectFirstTemplate();
+    }
+
+    @Override
+    public List<content> selectPaging(String contenttype, int page, int pageSize) {
+        return  backwrite.selectPaging(contenttype, page, pageSize);
+    }
+
+    public List<content> selectPaging(String contenttype, Integer page, Integer pageSize) {
+        PageHelper.startPage(page,pageSize);
+        return backwrite.selectPaging(contenttype, page, pageSize);
     }
 }

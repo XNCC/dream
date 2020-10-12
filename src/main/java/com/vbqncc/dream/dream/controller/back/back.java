@@ -1,17 +1,21 @@
 package com.vbqncc.dream.dream.controller.back;
 
+import com.github.pagehelper.PageInfo;
 import com.vbqncc.dream.dream.dao.back.backwrite;
 import com.vbqncc.dream.dream.pojo.back.content;
 import com.vbqncc.dream.dream.pojo.back.template;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -98,6 +102,7 @@ public class back {
         return map;
     }
 
+    /////////////////////////////////////模板相关的////////////////////////
     /**
      * @param id
      * @return
@@ -129,4 +134,29 @@ public class back {
         int i = backwrite.updateTemplate(template);
         return String.valueOf(i);
     }
+    @PostMapping("/selectFirstTemplate")
+    @ResponseBody
+    public String selectFirstTemplate(){
+        return  backwrite.selectFirstTemplate();
+    }
+    /////////////////////////////////////模板相关的////////////////////////
+
+    /////////////////////////////////////博客管理////////////////////////
+   @GetMapping("/blogManage")
+    public String blogManage(Model model,
+                             @RequestParam(value = "page", required = false, defaultValue = "1") int page,
+                             @RequestParam(value = "pageSize", required = false, defaultValue = "10") int pageSize){
+       String contenttype="1";
+       List<content> contents = backwrite.selectPaging(contenttype, page, pageSize);
+       PageInfo<content> pageInfo = new PageInfo<content>(contents);
+       long total = pageInfo.getTotal();
+       List<content> blogList = pageInfo.getList();
+       model.addAttribute("total", pageInfo.getTotal());
+       model.addAttribute("page", pageInfo.getPageNum());
+       model.addAttribute("pagesize", pageSize);
+       model.addAttribute("rows", blogList);     //当前页数据
+        return "back/blogManage";
+   }
+
+
 }

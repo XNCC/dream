@@ -29,6 +29,9 @@
 <body>
 <#include "./header.ftl">
 <div class="container">
+    <div>
+        <h2>模板编辑</h2>
+    </div>
     <div class="row" style="margin-top: 2%;">
         <div class="col-md-10">
             <div id="editor">
@@ -97,7 +100,7 @@
         var content = editor.txt.html();
         $.post("/updateTemplate", {"content": content, "id": id},
             function (data) {
-
+                console.log(data)
             });
     });
     //    选择模板
@@ -109,6 +112,13 @@
             });
 
     });
+    window.onload=function(){
+        //初始化模板
+        $.post("/selectFirstTemplate", {},
+            function (data) {
+                editor.txt.html(data)
+            });
+    }
 </script>
 
 </body>
