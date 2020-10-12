@@ -73,34 +73,10 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="exampleInputName2">标题</label>
-                        <input type="text" class="form-control" id="title" placeholder="标题">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="exampleInputName2">分类</label>
-                        <input type="text" class="form-control" id="type" placeholder="分类">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="exampleInputName2">标签</label>
-                        <input type="text" class="form-control" id="tag" placeholder="标签">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <button type="button" class="btn btn-primary" id="submit">发布</button>
-                    <button type="button" class="btn btn-primary" id="saveDraft">保存为草稿</button>
+                    <button type="button" class="btn btn-primary" id="saveTemplate">保存</button>
                 </div>
             </div>
         </div>
@@ -114,37 +90,14 @@
     editor.customConfig.uploadImgShowBase64 = true
     editor.create()
     $("#editor > div.w-e-text-container").height("500px");
-    //    提交
-    $("#submit").click(function () {
-        var content = editor.txt.html();
-        var template = $("#template").val();
-        var softwaretitle = $("#title").val();
-        var contenttype = $("#type").val();
-        var tag = $("#tag").val();
-        //发布
-        $.post("/write", {"content": content, "softwaretitle": softwaretitle, "contenttype": contenttype, tag: tag},
-            function (data) {
-                if (data.status == "0") {
-                    alert("保存成功");
-                } else {
-                    alert("保存失败");
-                }
-            });
-    });
+
     //保存为草稿
-    $("#saveDraft").click(function () {
+    $("#saveTemplate").click(function () {
+        var id = $('#template  option:selected').val();
         var content = editor.txt.html();
-        var template = $("#template").val();
-        var softwaretitle = $("#title").val();
-        var contenttype = $("#type").val();
-        var tag = $("#tag").val();
-        $.post("/saveDraft", {"content": content, "softwaretitle": softwaretitle, "contenttype": contenttype, tag: tag},
+        $.post("/updateTemplate", {"content": content, "id": id},
             function (data) {
-                if (data.status == "0") {
-                    alert("保存成功");
-                } else {
-                    alert("保存失败");
-                }
+
             });
     });
     //    选择模板
@@ -157,5 +110,6 @@
 
     });
 </script>
+
 </body>
 </html>

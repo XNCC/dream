@@ -1,4 +1,4 @@
-package com.vbqncc.dream.dream.controller;
+package com.vbqncc.dream.dream.controller.index;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
